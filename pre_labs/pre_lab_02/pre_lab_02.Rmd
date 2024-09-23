@@ -355,8 +355,8 @@ Now that you have seen how to use mutate, filtering and dates, give me three que
 
 **Answer**
 
-1.  
+1.  One that comes to mind right away is, what is the number of available seat by department? That allows for broader analysis on how we can compare entire departments instead of just specific classes. In one sense, this allows us to "zoom out," so to speak, with focusing on departments, but it also helps us get specific with these broad categories so that we can have a basis by which we precisely make distinctions among departments. This could help us answer whether there are any departments notoriously limited to registration, or, conversely, whether there are any that are commonly more available?
 
-2.  
+2.  Another that comes to mind is, how does a comparison among instructors look in terms of their respective numbers of available seats? This makes for a major analysis in the interest of students regarding ascertaining whether they'll be satisfied with a professor. A student might see an unusually high number of open seats for a professor and perhaps a number of seats for another professor that is quite low. From this, a student could draw a conclusion that the professor with fewer seats might be one who's popular or "in demand," so to speak, and that the professor with many open seats might have such high availability because that professor isn't that great/popular. For students who value a professor who's "nice" or "popular," as opposed to simply a quality professor, such a correlation might matter. 
 
-3.  
+3. Another question of interest could be, what patterns are there, if any, regarding term and instructor? What I mean by this is, could we identify which instructors are most or lest available based on what their availability is by term? This analysis would serve students' interest in terms of planning ahead and knowing how they want to proceed schedule-wise if they happen to have any favorite professors or professors they would want for any given specific class. 
