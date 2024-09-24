@@ -36,29 +36,36 @@ maryland_expenses <- read_csv("data/maryland_expenses.csv")
 ### **Q1** How many departments have offered the courses with "Climate" in the title and at least one seat? Which department has offered the most?
 
 ```{r}
-umd_courses |>
-  group_by(department)|>
-  filter(str_detect(title, "Climate"))|>
-  filter(seats>=1)
+umd_courses
+filter_by_department
+filter_str_detect(title,"climate")
 ```
 
 **A1 filter (department),**
+
+I thought the answer was two different departments. The next answer, I think, is Anthropology, which appears to offer both of those courses.
 
 ------------------------------------------------------------------------
 
 ### **Q2** Which departments have the most courses in the Fall 2023 term? And which departments in that term have at least one syllabus posted? How are the top departments different in each result? Where is Journalism in those results?
 
 ```{r}
+umd_courses
+filter_by_fall |> syllabus_posted
+
 
 ```
 
-**A2**
+**A2 While I'm getting the code wrong, I'm guessing the answer would be Civil Engineering, which had 57 courses, though I'm also having trouble viewing term. The next-biggest I found was American Studies, of which I found 40 classes. While I'm still not quite getting this right, my estimate based on what I'm seeing is that the major difference between these two is that there appear to be syllabi posted for American Studies.**
 
 ------------------------------------------------------------------------
 
 ### **Q3** Using the Maryland campaign expenses data, change the datatype of the expenditure_date column so that it is a date and not a chr. Then create a new column for the month based on expenditure_date. Then write code that shows total amount spent each month by Wes Moore's committee (you'll need to search the data to find the exact name). Write a sentence describing the pattern of spending over time.
 
 ```{r}
+[date (month) ]
+[expenditure_date]
+
 
 ```
 
@@ -69,10 +76,15 @@ umd_courses |>
 ### **Q4** Using case_when(), create a column in the Maryland expenses data called `spending_location` indicating whether each record indicated money spent in Maryland or outside Maryland. For records that are in Maryland, make the new column's value "In-state" and for the others, make it "Out of state". Then write code that shows the total amount of money spent in each category and describe the results. You can do this in one statement or break it up into two statements (saving the new column to your dataframe).
 
 ```{r}
+filter_by_maryland |>
+
+[in-state] 
+
+[outofstate]
 
 ```
 
-**A4**
+**A4 Unrelated to answer for question, but what does it mean when it shows half of the bar green and half red when I try to submit/enter code? It's showing all of it as wrong, but part of it comes up green initially.**
 
 ------------------------------------------------------------------------
 
@@ -80,7 +92,9 @@ umd_courses |>
 
 ```{r}
 #Test test
-
+filter(amount < 25)
+filter(donation < 25)
+filter($ < 25)
 ```
 
-**A5**
+**A5 Trying to ask R to show number of donations less than \$25. I'm getting the notification, "Object 'amount' not found," but when I view the chart of expenses, the category referring to individual donation amounts is listed as "amount."**
