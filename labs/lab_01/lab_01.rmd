@@ -42,6 +42,8 @@ umd_courses <- read_rds("lab_01.rds")
 
 ### **Q1** Which department has the highest mean (average) number of seats for its classes? You need to show the department with the highest average first. Which one is the most surprising/interesting to you?
 
+
+```{r} mean(department) =
 mean (artstudio) = 
 
 mean (musicperformance) =
@@ -102,29 +104,27 @@ mean (landscapearchitecture) =
 
 mean (computerscience) = 
 
-I've played around with the different ways to enter these, including no spaces and using or not using and or &, but I'm still not getting it to calculate results. Visually, my educated guess would be that the answer is school of music because it appears it has the most slots on the spreadsheet. 
-
-```{r}
-
 ```
 
 **A1**
-
+I've played around with different ways to enter these, including no spaces and using or not using and or &, but I'm still not getting it to calculate results. Visually, my educated guess would be that the answer is school of music because it appears it has the most slots on the spreadsheet. If I am right, that would be surprising and interesting to me because I would imagine that music courses would each have very specific focuses that few students would be pursuing. For example, if there were a woodwinds ensemble course, I would expect that'd be so specific of a specialty that it would have far fewer seats than, say, any given specific yet still commonly studied area of a department, such as civil engineering or chemical engineering. 
 ------------------------------------------------------------------------
 
 ### **Q2** Find out the greatest number of times any individual class has been offered in our dataset. You must show the greatest number of classes first.
 
-```{r}
+```{r} frequency(class)
 
 ```
 
-**A2** Still having trouble getting the formular entered correctly, but my guess, visually, is still school of music based on what appears to have most boxes. 
+**A2** Still having trouble getting the formula entered correctly, but my guess, visually, is still school of music based on what appears to have most boxes. 
 
 ------------------------------------------------------------------------
 
 ### **Q3** Count the number of courses for each instructor and department. Which instructor has taught the most?
 
-```{r}
+```{r} frequency(instructor)=
+frequency(music)=
+frequency(instructor) <| music
 
 ```
 
@@ -139,13 +139,16 @@ I've played around with the different ways to enter these, including no spaces a
 ```
 
 **A4**
-
+I think what might make the answer easier to see is not factoring in the "department" aspect here because it seems to be a distracting variable if the goal is to identify which professor has taught most.  
 ------------------------------------------------------------------------
 
 ### **Q5** Take one of the questions you listed in the final question of the pre_lab and try to answer it here in code. If you don't know how to fully answer it, write what code you can and describe in words what else you would need to do. If you got an answer, is it interesting?
 
-```{r}
+```{r}frequency(class) <| professor filter_by_department
 
 ```
 
-**A5** I'm working on accessing my completed pre-lab, as I think I didn't save it properly and that it might've been deleted by mistake.
+**A5** "What is the number of seats by class for each professor within any department teaching the same course?" This is one of the questions I had on the final question of the PreLab. I was unsucessful with the coding here, but in terms of what else I'd have to do, I'd say the main focus would be to focus specifically on the department and narrow down via additional criteria to sort things into manageable-sized units of observation. 
+
+seats(class(music)) <| professor 
+frequency(class) <| professor filter_by_department
