@@ -281,6 +281,8 @@ cleaned_md_grants_loans
 
 **Task** Write and run code to answer our original question: which zip code has gotten the most amount of money from the Maryland Tourism Board? Does that zip code make sense to you?
 
-```{r}
+```{r} zip_code<chr> <| amount<dbl> 
+
+My code isn't correct/entering properly, but my guess is that, assuming Tourism Board's purpose is to fund areas in the state particularly known for tourism, then somewhere likely to get most of this funding would be Baltimore, which has a zip code of 21201-21298. This guess is based off of multiple factors, such as Baltimore being host to notable museums (namely, the aquarium), the fact that the city hosts two major professional sports teams, etc. This would lead me to believe that the number of people visiting the city annually would be considerably higher than that of any other tourist total for any town/city in the rest of the state. 
 
 ```
