@@ -183,4 +183,4 @@ print(idea_response)
 
 ```
 
-**Answer:**
+**Answer: Main thing I can think of is that this output/explanation as it's presented feels very chaotic and jumbled and unorganized. I find it informative to a degree, but it's also hard to interpret because it just feels messy and doesn't seem to have true rhyme or reason. The / marks also make it difficult to retain/mentally compute this info smoothly.**
