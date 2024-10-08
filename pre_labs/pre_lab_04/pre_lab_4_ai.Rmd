@@ -25,7 +25,7 @@ Then we can load that library and, using your API key, setup your credentials:
 
 ```{r}
 library(axolotr)
-create_credentials(GROQ_API_KEY = "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")
+create_credentials(GROQ_API_KEY = "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")
 
 ```
 
