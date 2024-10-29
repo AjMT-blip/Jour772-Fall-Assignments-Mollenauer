@@ -98,10 +98,16 @@ baltimore_homicides |>
 
 ### Sentence 2
 
--   **Sentence text**:
+-   **Sentence text**: Of 50 of the nation’s largest cities, Baltimore is one of 34 where police now make homicide arrests less often than in 2014, according to a Washington Post analysis.
 -   **Analysis summary**: [Write up two to three sentences describing the results of your analysis. Were you able to confirm the finding? If not, why not?]
 
 ```{r}
+homicide_data |>
+  group_by(city, year(date)) |>
+  filter(str_detect(disposition, "Closed by arrest")) |>
+  summarise(total_homicides = sum(n()))|>
+  arrange(desc(total_homicides))
+  
 # Put code to reverse engineer sentence here
 
 # Display results of code below this codeblock
@@ -110,10 +116,16 @@ baltimore_homicides |>
 
 ### Sentence 3
 
--   **Sentence text**: [Paste in sentence to engineer here]
+-   **Sentence text**: [[There is an “indisputable” Freddie Gray effect] “And while most cities saw their arrest rates drop gradually, Baltimore’s decline was sudden — plummeting 15 percentage points in 2015, after Gray’s death, the largest single-year drop for any city already solving less than half its homicides.”]
 -   **Analysis summary**: [Write up two to three sentences describing the results of your analysis. Were you able to confirm the finding? If not, why not?]
 
 ```{r}
+homicide_data |>
+  group_by(city, "2015"(date)) |>
+  filter(str_detect)) |>
+  arrange(total_homicides)
+
+
 # Put code to reverse engineer sentence here
 
 # Display results of code below this codeblock
